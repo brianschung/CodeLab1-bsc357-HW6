@@ -53,6 +53,6 @@ public class MovableObject : MonoBehaviour {
     {
         // take the position and format it into JSON
         string jsonPos = JsonUtility.ToJson(transform.position, true); // the true is to enable pretty print
-        File.WriteAllText(Application.dataPath + "/" + name + ".json", pos);
+        File.WriteAllText(Application.dataPath + "/" + name + ".json", jsonPos);
     }
 }
